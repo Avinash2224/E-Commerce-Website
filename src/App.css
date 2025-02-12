@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"); 
+
+body {
+  font-family: "Lato", serif;
+}
+
+.bg-blue {
+  background: #0066ff;
+}
+
+@media(min-width: 1300px){
+  .container ,.container-lg , .container-md , .container-sm, .container-xl{
+    max-width: 1200px;
+  }
+}
+
+.headerWrapper{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 10px;
+}
+
+.headerWrapper .top-strip {
+  padding: 8px 0;
+}
+
+.headerWrapper .top-strip p {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.headerWrapper .header {
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+}
+
+.logoWrapper img {
+  width: 200%;
+  max-width: 180px;
+  height: 100px;
+  gap: 20px;
+}
+
+/* Flexbox for Location Dropdown and Search */
+.headerWrapper .header .part2 {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjusted spacing for better alignment */
+}
+
+/* Location Dropdown */
+.headerWrapper .header .part2 .countryDrop {
+  width: 150px;
+  height: 45px; /* Set height equal to the search box */
+  min-width: 150px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerWrapper .header .part2 .countryDrop .label {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop .name {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #233a95;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
+  opacity: 0.7;
+}
+
+/* Search Box */
+.headerSearch {
+  width: 700px;
+  height: 45px;
+  background: #f3f4f7;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.headerSearch input {
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: black;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.headerSearch button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.headerSearch button svg {
+  font-size: 20px;
+  color: black;
+}
+
+/* Cart Tab */
+.cartTab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Decreased gap and ensured equal spacing */
+}
+
+.cartTab button {
+  background: #fff1ee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartTab button svg {
+  color: #ea2b0f;
+  font-size: 22px;
+}
+
+.cartTab .price {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.cartTab .count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  background: #ea2b0f;
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* User Icon */
+.part3 .circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+nav .allCatTab {
+  background: #2bbef9;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: white;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Align content vertically */
+  gap: 10px; /* Adjust the gap between menu and arrow button */
+}
+
+nav .allCatTab:hover {
+  background: #2bbef9;
+}
+
+nav .allCatTab.text {
+  font-size: 600px;
+}
+
+nav .allCatTab svg .icon1 {
+  font-size: 25px;
+}
+
+nav .allCatTab svg .icon2 {
+  font-size: 15px;
+}
+
+/* If the arrow button is a separate element, add specific margin to it */
+nav .allCatTab .arrowButton {
+  margin-left: 10px; /* Adjust gap as needed */
+}
+
+
+/* Styling for the container */
+.navPart2 {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Styling for the list */
+.navPart2 .list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Styling for each list item */
+.navPart2 .list-inline-item {
+  list-style-type: none;
+}
+
+/* Styling for the links */
+.navPart2 .list-inline-item a {
+  text-decoration: none;
+  font-family: 'Itim', sans-serif; /* Make sure to add this font in your project */
+  font-size: 16px;
+  color: #333;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effects */
+.navPart2 .list-inline-item a:hover {
+  background-color: #ffcc00; /* Gold color */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navPart2 .list {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navPart2 .list-inline-item a {
+      padding: 8px 12px;
+  }
+}
+
+/* css for dropdown */
+.navPart2 {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+.navPart2 .list-inline {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navPart2 .list-inline-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+.navPart2 .dropdown {
+  position: relative;
+}
+.navPart2 .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  padding: 10px 0;
+  list-style-type: none;
+  margin: 0;
+  z-index: 100;
+}
+.navPart2 .dropdown-menu li {
+  padding: 8px 16px;
+}
+.navPart2 .dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+.navPart2 .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navPart2 .dropdown-toggle {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+.navPart2 .dropdown-menu li a:hover {
+  background-color: #100404;
+}
+
+nav .navPart1 .catWrapper{
+  position: relative;
+}
+
+.homeBannerSection{
+  position: relative; overflow: hidden;
+}
+
+.homeBannerSection .slick-arrow{
+  position: absolute; top: 45%; z-index: 100; 
+  display: flex; align-items: center; 
+  justify-content: center; 
+  width: 40px; height: 40px;
+  background: #100404;
+  border-radius: 100%;
+}
+
+.homeBannerSection .slick-arrow.slick-next{
+  right: 25px;
+}
+
+.homeBannerSection .slick-arrow.slick-prev{
+  left: 25px;
+}
+
+.homeBannerSection{
+  outline:auto;
+}
