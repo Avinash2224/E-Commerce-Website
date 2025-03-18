@@ -4,6 +4,7 @@ import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
 import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
+import banner5 from "../../assets/images/banner5.jpg";
 import { HiArrowLongRight } from "react-icons/hi2";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +14,8 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
+import discount from "../../assets/images/discount.jpg";
+
 
 const Home = () => {
   var productSliderOptions = {
@@ -46,6 +49,16 @@ const Home = () => {
                   alt="Banner"
                 />
                 </div>
+
+                <div className="mt-3">
+                <img
+                  src={banner5}
+                  className="cursor"
+                  style={{ width: "300px", height: "500px" }}
+                  alt="Banner"
+                />
+                </div>
+
               </div>
             </div>
 
@@ -159,6 +172,29 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+    <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <p className="text-white mb-1">$20 discount on your first order</p>
+            <h3 className="text-white"> Join our newsLetter and get...</h3 >
+            <p className="text-light"> sign in with e-mail<br></br> to get the sales update and offers</p>
+
+            <form>
+              <input type="text"></input>
+              <button>suscribe</button>
+            </form>
+
+          </div>
+          <div className="col-md-6">
+            <img src={discount}></img>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    
     </>
   );
 };

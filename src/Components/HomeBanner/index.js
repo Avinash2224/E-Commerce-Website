@@ -17,7 +17,8 @@ const HomeBanner = () => {
   };
 
   return (
-    <div className="homeBannerSection">
+  <div className="container mt-3">
+      <div className="homeBannerSection">
       <Slider {...settings}>
         <div className="item">
           <img src="https://www.boat-lifestyle.com/cdn/shop/files/banner-desktop_1440x.jpg?v=1734421227" className="w-100" />
@@ -33,6 +34,7 @@ const HomeBanner = () => {
         </div>
       </Slider>
     </div>
+  </div>
   );
 };
 

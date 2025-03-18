@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Header from './Components/Header';
 import axios from 'axios';
 import { useEffect } from "react";
+import Footer from './Components/Footeer';
  
 
 const MyContext = createContext(); 
@@ -38,6 +39,8 @@ const values ={
     <Routes>
       <Route path='/' exact={true} element={<Home/>} />
     </Routes>
+    <Footer/>
+    
     </MyContext.Provider>
     </BrowserRouter>
   );
