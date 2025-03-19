@@ -22,7 +22,7 @@ const ProductItem = () => {
         <span className="product-badge">20%</span>
       </div>
       <div className="info">
-        <h4>Delite and Pure Candies || Werther's Original</h4>
+        <h4>Delite and Pure Candies || Werther's Originl</h4>
         <span className="text-success d-block">In Stock</span>
         <Rating
           className="mt-2 mb-2"
