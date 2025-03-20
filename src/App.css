@@ -702,4 +702,98 @@ footer .linksWrap ul li a:hover {
   color: #007bff;
 }
 
+.product_Listing_Page .productListing{
+  gap: 20px;
+}
+
+.product_Listing_Page .productListing .slidebar {
+width: 20%;
+flex:  0 0 20%;
+}
+
+.product_Listing_Page .productListing .content_right {
+width: 80%;
+flex:  0 0 80%;
+
+}
+.product_Listing_Page{
+  padding: 35px 0px;
+}
+
+.product_Listing_Page .productListing .slidebar .filterBox h6{
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product_Listing_Page .productListing .slidebar .scroll {
+  padding-left: 0px;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.product_Listing_Page .productListing .slidebar .scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.product_Listing_Page .productListing .slidebar .scroll ul li{
+  list-style: none;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.css-wmr2w-MuiButtonBase-root-MuiCheckbox-root{
+  padding: 2px !important;
+}
+
+.product_Listing_Page .productListing .slidebar .filterBox{
+  margin-bottom: 30px;
+}
+
+/* css for the fliter by price  */
+/* Add this CSS to your stylesheet */
+
+/* Container for the slider to control width */
+.filterBox .range-slider {
+  max-width: 200px;
+  margin: 10px 0;
+
+}
+
+/* Style for the slider track */
+.filterBox .range-slider .range-slider__range {
+  background: black;
+  height: 3px;
+}
+
+/* Style for the slider thumbs */
+.filterBox .range-slider .range-slider__thumb {
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.0);
+}
+
+/* Style for the price range display */
+.priceRange {
+  font-size: 14px;
+  justify-content: space-between;
+  max-width: 200px;
+  color: #100404;
+  display: flex;
+}
+
+/* Ensure the slider container has proper spacing */
+.filterBox {
+  margin-bottom: 20px;
+}
+
+.showBy{ 
+  width: 100%;
+  height: 50px;
+  background: #b9bac0;
+}
 

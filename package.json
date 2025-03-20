@@ -24,7 +24,8 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.14",
     "swiper": "^11.2.4",
-    "webpack": "^5.97.1"
+    "webpack": "^5.97.1",
+    "react-range-slider-input": "3.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
