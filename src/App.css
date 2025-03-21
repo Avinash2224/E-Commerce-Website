@@ -797,3 +797,55 @@ flex:  0 0 80%;
   background: #b9bac0;
 }
 
+/* css for the new buttons  */
+.product_Listing_Page .productListing .content_right {
+  width: 80%;
+  flex: 0 0 80%;
+  padding-left: 50px;
+}
+
+.product_Listing_Page .productListing .content_right .showBy {
+  width: 100%;
+  height: auto;
+  background: #f7f8fd;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button {
+  min-width: auto !important;
+  height: auto !important;
+  width: auto !important;
+  background: transparent !important;
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button:hover {
+  background: transparent !important;
+}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button svg {
+  color: #000;
+  font-size: 15px; /* Increased icon size for better visibility */
+}
+
+.showByFliter button{
+    min-width: auto !important;
+    color: #000;
+}
+.showByFliter button svg{
+  color: #000;
+  opacity: 0.6;
+}
+
