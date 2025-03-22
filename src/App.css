@@ -849,3 +849,7 @@ flex:  0 0 80%;
   opacity: 0.6;
 }
 
+.section{
+  padding: 45px 0px;
+  margin-left: 60px;
+}
