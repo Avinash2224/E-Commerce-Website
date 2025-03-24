@@ -853,3 +853,139 @@ flex:  0 0 80%;
   padding: 45px 0px;
   margin-left: 60px;
 }
+
+.cartPage {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-8 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.col-md-4 {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.cart-summary-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.cart-summary-container h4 {
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  font-size: 18px;
+  color: #d9534f;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(142, 45, 226, 0.4);
+}
+
+.table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table th, .table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dee2e6;
+  background: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #e9ecef;
+}
+
+.quantity-display {
+  width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.refund-policy {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.refund-policy h5 {
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.refund-policy a {
+  color: #4a00e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.refund-policy a:hover {
+  text-decoration: underline;
+  color: #8e2de2;
+}
