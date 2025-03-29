@@ -35,6 +35,9 @@ const context = useContext(MyContext);
                 }
                 <SearchBox />
                 <div className="part3 d-flex align-items-center ml-auto">
+                  <Link to ="/signIn" className="text-decoration-none">
+                  <Button className="btm-blue btn-lg btn-big btn-round">Sign In </Button>
+                  </Link>
                   <Button className="circle">
                     <FaUserCircle />
                   </Button>
