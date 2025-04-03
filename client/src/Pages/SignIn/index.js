@@ -72,7 +72,7 @@ const SignIn = () => {
                   </div>
                 </form>
                 
-                <div className="divider d-flex align-items-center my-4">
+                <div className="divider d-flex align-items-center my-5">
                   <div className="border-bottom flex-grow-1"></div>
                   <span className="px-2 text-muted">OR</span>
                   <div className="border-bottom flex-grow-1"></div>
