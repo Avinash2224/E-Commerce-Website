@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv/config');
 
+
 app.use(cors());
 app.options('*', cors());
 
@@ -12,8 +13,12 @@ app.options('*', cors());
 app.use(bodyParser.json());
 
 // routes
+const productRoutes = require('./routes/product');
 const categoryRoute = require('./routes/category');
+
 app.use('/api/category', categoryRoute);
+app.use('/api/products', productRoutes);
+
 
 // database
 mongoose.connect(process.env.CONNECTION_STRING)
